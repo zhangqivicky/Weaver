@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+
+.top-50 {
+  margin-top: 50px;
+}
+.top-60 {
+  margin-top: 60px;
+}
+.bottom-0 {
+  margin-bottom: 0px;
+}
+.bottom-5 {
+  margin-bottom: 5px;
+}
+.bottom-15 {
+  margin-bottom: 15px;
+}
+.bottom-50 {
+  margin-bottom: 50px;
+}
+.left-15 {
+  margin-left: 15px;
+}
+.right-15 {
+  margin-right: 15px;
+}
+.right-25 {
+  margin-right: 25px;
+}
+
+.jga-widget .jga-toolbar {
+  position: absolute;
+  right: 0px;
+  background-color: grey;
+  padding: 7px;
+  border-bottom-left-radius: 10px;
+}
+
+.jga-widget .jga-content {
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  z-index: 2;
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+.list-group-item{
+  border: none;
+  width: 100%;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-text{
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover{
+  color: #fff;
+}
+
+.navbar-header{
+  width: 100%;
+}
+
+.bg-blue{
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.bg-gray{
+  background-color: #f8f8f8;
+  border-color: #eeeeee;
+}
+
+.bg-white{
+  background-color: #ffffff !important;
+}
+
+.text-black{
+  color: #000000 !important;
+}
+.text-blue {
+  color: #337ab7 !important;
+}
+.icon-black {
+  color: #000000;
+}
+.icon-white {
+  color: #ffffff;
+}
+.icon-blue {
+  color: #337ab7
+}
+input, textarea{
+  margin-bottom: 5px;
+}
+textarea{
+  height: 250px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-header {
+    padding-right: 15px;
+  }
+  .mobile-right-15 {
+    margin-right: 15px
+  }
+}
+@media only screen and (min-width: 768px) {
+
+  .desk-right-35 {
+    margin-right: 35px
+  }
+  .desk-hide{
+    display: none;
+  }
+}
+
+.two-columns{
+  padding-left: 0;
+}
+.two-columns .container{
+  width: 100%;
+  padding:0;
+}
+.two-columns .col-sm-3, .two-columns .col-sm-9{
+  padding: 0;
+}
+.two-columns .right-border{
+  border-right: 1px solid #eee;
+  height: 100vh;
+
+}
+.two-columns .container-fluid{
+  border-radius: 0px !important;
+}
+.two-columns .content{
+  padding:15px;
+}
+
+.two-columns .navbar{
+  border-radius: 0;
+}
+
+.no-border {
+  border: none;
+}
+
+p {
+  font-size: 12px;
+}
+

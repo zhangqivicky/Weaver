@@ -1,0 +1,409 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.text-label{
+  font-size: 12pt;
+  margin-left: 5%;
+}
+
+header.gray{
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  color: black;
+  background-color: lightgray;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+header.blue{
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  color: black;
+  background-color: DodgerBlue;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+header.whitetext{
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 1em;
+  color: Red;
+  background-color: White;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+textarea.html-text-box
+{
+  background: #ffffff repeat-y fixed;
+  border-width:1;
+  border-style:solid;
+  border-color:#cccccc;
+  font-family:Arial;
+  font-size:10pt;
+  color:000000;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 14px 20px;
+  border-radius: 4px;
+}
+
+input.form-control {
+  background-color:#ffffff;
+  background-repeat:
+    repeat-y;
+  background-attachment:
+    fixed;border-width:1;
+  border-style:solid;
+  border-color:#cccccc;
+  font-family:Arial;
+  font-size:10pt;
+  color:000000;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  height: 50px;
+}
+
+.text-box1
+{ background: darkblue ;
+  font-family:Arial;
+  font-size:12pt;
+  color:white;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 30px;}
+
+.text-box2
+{ background: crimson ;
+  font-family:Arial;
+  font-size:12pt;
+  color:white;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border-radius: 30px;
+  cursor: pointer;}
+
+.text-box3
+{ background: darkgreen ;
+  font-family:Arial;
+  font-size:12pt;
+  color:white;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border-radius: 30px;
+  cursor: pointer;}
+
+
+div.container {
+  width: 100%;
+  border: none;
+  display: block;
+  margin: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+div.block {
+  width:50%;
+  float:left;
+  margin: 8px;
+  margin-left: 10%;
+  font-size: 15pt;
+  position:static;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+div.heading{
+  width: 50%;
+  padding: 1em;
+  color: white;
+  background-color: DodgerBlue;
+}
+
+footer.gray {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  color: white;
+  background-color: lightgray;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+footer.blue {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  color: white;
+  background-color: DodgerBlue;
+  clear: left;
+  text-align: left;
+  margin: 0;
+}
+
+.glyphicon.glyphicon-chevron-left {
+  font-size: 30px;
+  border:0;
+  margin-left:2%
+}
+
+.glyphicon.glyphicon-plus.split {
+  font-size: 30px;
+  border:0;
+  margin-right:5%
+}
+
+.glyphicon.glyphicon-plus.full{
+  font-size: 30px;
+  border:0;
+  margin-left:60%
+}
+
+.glyphicon.glyphicon-cog.split {
+  font-size: 20px;
+  margin-left: 90%;
+}
+
+.glyphicon.glyphicon-cog.full {
+  font-size: 30px;
+  margin-left: 90%;
+}
+
+.glyphicon.glyphicon-cog {
+  font-size: 20px;
+  margin-left: 90%;
+}
+
+.glyphicon.glyphicon-user {
+  font-size: 20px;
+  margin-left:90%;
+}
+
+.glyphicon.glyphicon-ok {
+  font-size: 30px;
+  margin-leftt:60%
+}
+
+.glyphicon.glyphicon-plus {
+  font-size: 30px;
+  border:0;
+  margin-left:60%
+}
+
+#parent {
+  display: flex;
+  color: white;
+  background-color: DodgerBlue;
+}
+#left {
+  width: 50%;
+  /* Just so it's visible */
+}
+#right {
+  flex: 1;
+  /* Grow to rest of container */
+  /* Just so it's visible */
+}
+
+#parentbody {
+  display: flex;
+  background-color: white;
+}
+#leftbody {
+  width: 50%;
+  /* Just so it's visible */
+}
+#rightbody {
+  flex: 1;
+  /* Grow to rest of container */
+  /* Just so it's visible */
+}
+
+/*from homePage*/
+.height{
+  height:100%;
+}
+
+.content{
+  text-align: left;
+  padding-top: 15%;
+}
+
+#logo{
+  height: 200%;
+  margin-top: -8px;
+  margin-right: 15px;
+}
+
+.weaver-size{
+  font-size: 1.5em;
+}
+
+.header{
+  height: 55px;
+  font-size: 1.25em;
+}
+
+.bg{
+  background: url(http://smartplaces.eu/wordpress/wp-content/uploads/2017/11/FG_7275.jpg) no-repeat;
+  height:100vh;
+  background-size:cover;
+  background-origin: content-box;
+  background-position: center;
+  font-family: Lato;
+  color:white;
+}
+.font-lato{
+  font-family: Lato;
+}
+
+
+h1{
+  font-weight: 700;
+  font-size:5em;
+}
+h2{
+  font-weight: 400;
+  font-size: 3em;
+}
+
+hr{
+  width: 400px;
+  border-top:1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.bt{
+  margin-right: 600px;
+}
+.search-icon{
+  margin: 0px 10px 0px 0px;
+  width: 30px;
+}
+.search-text {
+  margin-top: 8px;
+  padding: 5px;
+  margin-left: 1px !important;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 200px;
+  font-size: 14px;
+}
+
+#about, #contact{
+  display: none;
+  padding: 60px 50px 0px 50px;
+  height: 100vh;
+  background-color: rgba(300, 76, 76, 0.3);
+}
+div.container-center {
+  margin: 10% 35% 25% 35%;
+  width: 30%;
+  height: 60%;
+}
+
+div.container-left{
+  margin:10% 10% 25% 10%;
+}
+div.container-right{
+  margin:10% 10% 25% 0%;
+}
+
+.topspace {
+  margin-top: 50px;
+}
+
+.topspace1 {
+  margin-top: 30px;
+}
+
+.topspace2 {
+  margin-top: 100px;
+}
+
+p.pLine1 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+p.pLine2 {
+  font-size: 1.2em;
+}
+
+@media (min-width: 800px) {
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+/*// mark down*/
+.largeBtn{
+  padding:12px 25px;
+  margin: 14px 15px;
+}
+
+.caret {
+  border-width: 5px;
+  /*border-top:4px;*/
+}
+
+.textPstn{
+  margin:5px;
+}
+
+
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/OOjs_UI_icon_search.svg');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+input.html-date{
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+input.html-location{
+  height: 45px;
+  width: 30em;
+  margin-top: 10px;
+}
+

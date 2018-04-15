@@ -1,0 +1,91 @@
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a routerLink="/login">Logout  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container-left">
+          <div class="col-lg-4">
+            <img [src]="imageUrl" style="width:100px; height:100px"> </div>
+          <div class="col-lg-2">
+            <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)" class="topspace1">
+            <br>
+            <button type="button" (click)="uploadImage()" class="btn-submit"  [disabled]="Image.value==''">Submit</button> </div>
+          <br><br><br><br><br><br>
+          <label class="text-label">Username</label>
+
+          <input [(ngModel)]="username"
+                 name="username"
+                 placeholder="username"
+                 type="text"
+                 class="form-control"/>
+
+          <label class="text-label">Email</label>
+          <input [(ngModel)] = "email"
+                 name= "email"
+                 placeholder="email"
+                 type="email"
+                 class="form-control" disabled />
+
+          <label class="text-label">First Name</label>
+          <input [(ngModel)] = "firstName"
+                 placeholder="first name"
+                 type="text"
+                 class="form-control"/>
+
+          <label class="text-label">Last Name</label>
+          <input [(ngModel)]="lastName"
+                 placeholder="last name"
+                 type="text"
+                 class="form-control"/>
+
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class = "container-right">
+          <label class="text-label">Current Password</label>
+          <input [(ngModel)] = "currentpassword"
+                 placeholder="Type in previous password before change"
+                 type="password"
+                 class="form-control" disabled/>
+          <label class="text-label">Change Password</label>
+          <input [(ngModel)] = "newpassword"
+                 placeholder=""
+                 type="password"
+                 class="form-control"/>
+
+          <label class="text-label">Confirm Password</label>
+          <input [(ngModel)] = "confirmpassword"
+                 placeholder=""
+                 type="password"
+                 class="form-control"/>
+          <button (click) = "updateProfile()"
+                  class="text-box1"> Update </button>
+          <button routerLink='/user/{{userId}}/event'
+                  class="text-box3"> My Events
+          </button>
+          <button routerLink='/login'
+                  class="text-box2" > Sign Out</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
