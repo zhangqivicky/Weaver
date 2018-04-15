@@ -58,8 +58,9 @@
       <span class="help-block" *ngIf="!verifyPassword.valid && verifyPassword.touched">
        Please enter verify password!
   </span>
-      <button (click)="registera()"
-              class="text-box1"> Register </button>
+      <button type="submit"
+              class="text-box1"
+              [disabled]="!f.valid"> Register </button>
       <button routerLink='/login'
               class="text-box2"> Cancel</button>
 
