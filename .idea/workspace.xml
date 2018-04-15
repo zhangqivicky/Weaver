@@ -2,107 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b73657d-c44f-46b7-9bdd-9649c7ddccbd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment/app.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/models.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/page/page.model.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/page/page.schema.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/user/user.model.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/user/user.schema.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/website/website.model.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/website/website.schema.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/widget/widget.model.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/model/widget/widget.schema.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/services/page.service.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/services/user.service.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/services/website.service.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assignment/services/widget.service.server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/quiz/Quiz3-answer" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/quiz/quiz2_vickyzhang.pages" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-edit/page-edit.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-edit/page-edit.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-edit/page-edit.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-edit/page-edit.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-list/page-list.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-list/page-list.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-list/page-list.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-list/page-list.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-new/page-new.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-new/page-new.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-new/page-new.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/page/page-new/page-new.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/register/register.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/register/register.component.html" />
       <change beforePath="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-edit/website-edit.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-edit/website-edit.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-edit/website-edit.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-edit/website-edit.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-chooser/widget-chooser.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-chooser/widget-chooser.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-chooser/widget-chooser.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-chooser/widget-chooser.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-edit.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-edit.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-edit.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-edit.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-header/widget-header.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-header/widget-header.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-header/widget-header.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-header/widget-header.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-list/widget-list.component.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-list/widget-list.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-list/widget-list.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/widget/widget-list/widget-list.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/page.model.client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/user.model.client.ts" afterPath="$PROJECT_DIR$/src/app/models/user.model.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/website.model.client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/widget.model.client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/page.service.client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/user.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/website.service.client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/widget.service.client.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/styles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/page/page-edit.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/page/page-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/page/page-new.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/user/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/user/profile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/user/register.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/website/website-edit.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/website/website-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/website/website-new.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/widget/widget-choose.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/widget/widget-heading.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/widget/widget-image.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/widget/widget-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/views/widget/widget-youtube.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -152,11 +52,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mongo/models/models.server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -193,7 +113,6 @@
         <option value="$PROJECT_DIR$/assignment/app.js" />
         <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
         <option value="$PROJECT_DIR$/src/app/models/user.model.client.ts" />
@@ -240,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
         <option value="$PROJECT_DIR$/src/mongo/models/models.server.js" />
+        <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
       </list>
     </option>
   </component>
@@ -257,9 +177,9 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="238" />
-    <option name="y" value="85" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="116" />
+    <option name="y" value="178" />
     <option name="width" value="1280" />
     <option name="height" value="671" />
   </component>
@@ -299,6 +219,30 @@
               <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
@@ -378,15 +322,16 @@
       <workItem from="1522968638252" duration="68305000" />
       <workItem from="1523300929072" duration="488000" />
       <workItem from="1523312879418" duration="33059000" />
-      <workItem from="1523762626367" duration="565000" />
+      <workItem from="1523762626367" duration="849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301769000" />
+    <option name="totallyTimeSpent" value="302053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="238" y="85" width="1280" height="671" extended-state="1" />
+    <frame x="116" y="178" width="1280" height="671" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -472,6 +417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -507,6 +453,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="33" column="58" lean-forward="true" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,13 +473,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/views/widget/widget-list.html" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-list/widget-list.component.html" />
     <entry file="file://$PROJECT_DIR$/assignment/model/website/website.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -562,14 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="766">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,6 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +626,23 @@
     <entry file="file://$PROJECT_DIR$/src/mongo/models/models.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
       </provider>
