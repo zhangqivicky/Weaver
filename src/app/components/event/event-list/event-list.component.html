@@ -33,48 +33,48 @@
 
       <!--show live events-->
       <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade in active" id="live">
+        <!--<div class="tab-pane fade in active" id="live">-->
 
-          <ul *ngFor = "let event of events"  class = "list-group">
+          <!--<ul *ngFor = "let event of events"  class = "list-group">-->
 
 
-            <li class = "list-group-item">
-              <div class = "row">
+            <!--<li class = "list-group-item">-->
+              <!--<div class = "row">-->
 
-                <div class="col-xs-1">
-                  <a (click)="toAttendees()">
-                    Attendees
-                  </a>
-                </div>
+                <!--<div class="col-xs-1">-->
+                  <!--<a (click)="toAttendees()">-->
+                    <!--Attendees-->
+                  <!--</a>-->
+                <!--</div>-->
 
-                <div class="col-xs-6" style="font-size: 15pt">
-    <span>
-      <a target="_blank" rel="noopener"
-         href={{event.url}}>
-        {{event.name}}</a>
-    </span>
-                </div>
+                <!--<div class="col-xs-6" style="font-size: 15pt">-->
+    <!--<span>-->
+      <!--<a target="_blank" rel="noopener"-->
+         <!--href={{event.url}}>-->
+        <!--{{event.name}}</a>-->
+    <!--</span>-->
+                <!--</div>-->
 
-                <div class="col-xs-2">
-                  <span>{{event.date}}</span>
-                </div>
+                <!--<div class="col-xs-2">-->
+                  <!--<span>{{event.date}}</span>-->
+                <!--</div>-->
 
-                <div class="col-xs-2">
-                  <span>{{event.location}}</span>
-                </div>
+                <!--<div class="col-xs-2">-->
+                  <!--<span>{{event.location}}</span>-->
+                <!--</div>-->
 
-                <div class="col-xs-1">
-                  <a routerLink="">
-                    <span>Share</span>
-                  </a>
-                </div>
+                <!--<div class="col-xs-1">-->
+                  <!--<a routerLink="">-->
+                    <!--<span>Share</span>-->
+                  <!--</a>-->
+                <!--</div>-->
 
-              </div>
-            </li>
+              <!--</div>-->
+            <!--</li>-->
 
-          </ul>
-        </div>
-        <div class="tab-pane fade" id="post">
+          <!--</ul>-->
+        <!--</div>-->
+        <div class="tab-pane fade in active" id="post">
           <ul *ngFor="let postevent of postevents" class = "list-group">
 
             <li class = "list-group-item">

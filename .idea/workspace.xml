@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b73657d-c44f-46b7-9bdd-9649c7ddccbd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/register/register.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/register/register.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html" afterPath="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -62,12 +62,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="354">
               <caret line="62" column="36" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event-list.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+              <folding>
+                <marker date="1523764489000" expanded="false" signature="1934:1949" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-230">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/assignment/app.js" />
         <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
@@ -160,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/mongo/models/models.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html" />
       </list>
     </option>
   </component>
@@ -178,8 +202,8 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
-    <option name="y" value="150" />
+    <option name="x" value="42" />
+    <option name="y" value="298" />
     <option name="width" value="1280" />
     <option name="height" value="671" />
   </component>
@@ -233,7 +257,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="event-list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +275,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
@@ -331,15 +363,15 @@
       <workItem from="1522968638252" duration="68305000" />
       <workItem from="1523300929072" duration="488000" />
       <workItem from="1523312879418" duration="33059000" />
-      <workItem from="1523762626367" duration="1097000" />
+      <workItem from="1523762626367" duration="1361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302301000" />
+    <option name="totallyTimeSpent" value="302565000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="150" width="1280" height="671" extended-state="0" />
+    <frame x="42" y="298" width="1280" height="671" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -397,8 +429,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-edit.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-edit.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-header/widget-header.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.ts" />
@@ -426,6 +456,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -653,6 +684,26 @@
         <state relative-caret-position="354">
           <caret line="62" column="36" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+          <folding>
+            <marker date="1523764489000" expanded="false" signature="1934:1949" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
