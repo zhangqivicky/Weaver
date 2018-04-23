@@ -32,3 +32,7 @@ function updateEvent(eventId, event) {
 function deleteEvent(eventId) {
   return eventModel.remove({_id: eventId});
 }
+function findAllEvents() {
+  return eventModel.find(function (err, docs) {
+  });
+}

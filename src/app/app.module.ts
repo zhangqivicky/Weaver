@@ -13,7 +13,7 @@ enableProdMode();
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
-import { HomeEventComponent } from './components/home/home-event/home-event.component';
+import { HomeEventComponent } from './components/event/home-event/home-event.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { RegisterComponent } from './components/user/register/register.component';

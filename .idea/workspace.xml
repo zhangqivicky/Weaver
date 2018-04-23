@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b73657d-c44f-46b7-9bdd-9649c7ddccbd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html" afterPath="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.css" afterPath="$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.css" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.html" afterPath="$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.spec.ts" afterPath="$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.ts" afterPath="$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/event.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
+      <change beforePath="$PROJECT_DIR$/src/mongo/models/event/event.model.server.js" afterPath="$PROJECT_DIR$/src/mongo/models/event/event.model.server.js" />
+      <change beforePath="$PROJECT_DIR$/src/mongo/services/event.service.server.js" afterPath="$PROJECT_DIR$/src/mongo/services/event.service.server.js" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -20,31 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.service.client.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/user.service.client.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="event.service.client.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/services/event.service.client.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="466">
+              <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -52,43 +43,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mongo/models/models.server.js">
+      <file leaf-file-name="event.model.server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mongo/models/event/event.model.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="271">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
+      <file leaf-file-name="event.schema.server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mongo/models/event/event.schema.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="62" column="36" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event-list.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="event.service.server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mongo/services/event.service.server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="82" column="3" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event-list.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+            <state relative-caret-position="2730">
+              <caret line="182" column="0" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.routing.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <marker date="1523764489000" expanded="false" signature="1934:1949" ph="..." />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts">
+      <file leaf-file-name="home-event.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-230">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="61">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -96,11 +117,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.ts">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="180">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-event.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,13 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assignment/app.js" />
-        <option value="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
-        <option value="$PROJECT_DIR$/src/app/models/user.model.client.ts" />
-        <option value="$PROJECT_DIR$/src/app/models/website.model.client.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.ts" />
         <option value="$PROJECT_DIR$/assignment/model/user/user.schema.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.ts" />
         <option value="$PROJECT_DIR$/src/app/models/page.model.client.ts" />
@@ -179,11 +203,18 @@
         <option value="$PROJECT_DIR$/assignment/model/widget/widget.model.server.js" />
         <option value="$PROJECT_DIR$/src/app/services/page.service.client.ts" />
         <option value="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
-        <option value="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
         <option value="$PROJECT_DIR$/src/mongo/models/models.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/register/register.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.html" />
+        <option value="$PROJECT_DIR$/src/styles.css" />
+        <option value="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
+        <option value="$PROJECT_DIR$/src/mongo/models/event/event.model.server.js" />
+        <option value="$PROJECT_DIR$/src/mongo/services/event.service.server.js" />
       </list>
     </option>
   </component>
@@ -202,10 +233,10 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="298" />
+    <option name="x" value="482" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="671" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -225,83 +256,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-              <item name="event-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mongo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weaver-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weaver-test" type="462c0819:PsiDirectoryNode" />
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mongo" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -318,6 +323,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/components/event" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assignment/services" />
       <recent name="$PROJECT_DIR$/assignment" />
@@ -363,25 +371,26 @@
       <workItem from="1522968638252" duration="68305000" />
       <workItem from="1523300929072" duration="488000" />
       <workItem from="1523312879418" duration="33059000" />
-      <workItem from="1523762626367" duration="1361000" />
+      <workItem from="1523762626367" duration="1847000" />
+      <workItem from="1524466875703" duration="2221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302565000" />
+    <option name="totallyTimeSpent" value="305272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="298" width="1280" height="671" extended-state="0" />
+    <frame x="482" y="23" width="1280" height="690" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23828435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.037650604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -429,17 +438,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-header/widget-header.component.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-youtube/widget-youtube.component.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-edit/widget-image/widget-image.component.spec.ts" />
-    <entry file="file://$PROJECT_DIR$/assignment/model/page/page.schema.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/services/widget.service.client.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.spec.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/services/page.service.client.ts" />
@@ -452,14 +450,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/page/page-edit/page-edit.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/components/page/page-edit/page-edit.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -481,38 +471,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="58" lean-forward="true" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.html" />
-    <entry file="file://$PROJECT_DIR$/assignment/model/user/user.schema.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment/model/website/website.schema.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/model/user/user.schema.server.js" />
+    <entry file="file://$PROJECT_DIR$/assignment/model/website/website.schema.server.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/views/widget/widget-list.html" />
     <entry file="file://$PROJECT_DIR$/src/app/components/widget/widget-list/widget-list.component.html" />
-    <entry file="file://$PROJECT_DIR$/assignment/model/website/website.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/model/website/website.model.server.js" />
     <entry file="file://$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.html" />
     <entry file="file://$PROJECT_DIR$/src/app/models/user.model.client.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -523,13 +487,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/services/website.service.client.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/models/website.model.client.ts" />
-    <entry file="file://$PROJECT_DIR$/assignment/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/app.js" />
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -537,18 +495,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment/model/user/user.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/model/user/user.model.server.js" />
     <entry file="file://$PROJECT_DIR$/src/app/components/user/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,13 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment/model/models.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/model/models.server.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -581,77 +526,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment/services/user.service.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/services/user.service.server.js" />
     <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="720">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/website/website-list/website-list.component.ts" />
-    <entry file="file://$PROJECT_DIR$/assignment/services/website.service.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/services/website.service.server.js" />
     <entry file="file://$PROJECT_DIR$/src/app/components/website/website-new/website-new.component.ts" />
-    <entry file="file://$PROJECT_DIR$/assignment/services/widget.service.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment/model/widget/widget.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment/model/widget/widget.schema.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment/services/widget.service.server.js" />
+    <entry file="file://$PROJECT_DIR$/assignment/model/widget/widget.model.server.js" />
+    <entry file="file://$PROJECT_DIR$/assignment/model/widget/widget.schema.server.js" />
     <entry file="file://$PROJECT_DIR$/src/app/services/user.service.client.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="780">
           <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/event.service.client.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +559,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
+        <state relative-caret-position="405">
           <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
@@ -675,13 +569,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-83">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/user/register/register.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="930">
           <caret line="62" column="36" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
           <folding />
         </state>
@@ -689,21 +582,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        <state relative-caret-position="2730">
+          <caret line="182" column="0" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/event/home-event/home-event.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1523764489000" expanded="false" signature="1934:1949" ph="..." />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/event.service.client.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mongo/models/event/event.model.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mongo/models/event/event.schema.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mongo/services/event.service.server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="82" column="3" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -9,6 +9,7 @@ module.exports = function(app) {
   app.get("/api/event/:eventId", findEventById);
   app.put("/api/event/:eventId", updateEvent);
   app.delete("/api/event/:eventId", deleteEvent);
+  app.get("/api/event", findAllEvents);
 
 
   function createEvent(req, res) {
@@ -72,6 +73,12 @@ module.exports = function(app) {
     var eventId = req.params['eventId'];
     eventModel.deleteEvent(eventId).then(function(status) {
       res.send(status);
+    });
+  }
+
+  function findAllEvents(req, res){
+    eventModel.findAllEvents().then(function(events){
+      res.json(events);
     });
   }
 }
