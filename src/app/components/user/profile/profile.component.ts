@@ -80,8 +80,12 @@ export class ProfileComponent implements OnInit {
       this.errorMsg = 'The password and verify password does not match !';
       return;
     } else if (this.newPassword ) {
-      const bcrypt = require('bcrypt-nodejs');
-      this.user['password'] = bcrypt.hashSyn(this.newPassword);
+      if(this.newPassword.length > 16) {
+        this.errorFlag = true;
+        this.errorMsg = 'The length of password should be no more than than 16 !';
+        return;
+      }
+      this.user['password'] = this.newPassword;
     }
     if (this.displayname) {
       this.user['displayname'] = this.displayname.trim();

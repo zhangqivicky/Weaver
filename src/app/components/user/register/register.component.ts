@@ -48,6 +48,10 @@ export class RegisterComponent implements OnInit {
       this.errorFlag = true;
       this.errorMsg = 'The verify password does not match !';
       return;
+    } else if (this.password.length > 16) {
+      this.errorFlag = true;
+      this.errorMsg = 'The length of password should be no more than 16 !';
+      return;
     }
 
     this.userService.findUserByUsername(this.username).subscribe(
