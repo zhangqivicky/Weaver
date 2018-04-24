@@ -45,6 +45,9 @@ export class EventProfileComponent implements OnInit {
   toChat() {
     this.router.navigate(['/event/' + this.eventId + '/chat']);
   }
+  toProfile() {
+    this.router.navigate(['/profile']);
+  }
   cancleEvent() {
   }
   joinEvent() {
