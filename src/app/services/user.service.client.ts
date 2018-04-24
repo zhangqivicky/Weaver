@@ -4,12 +4,14 @@ import { HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+import {environment} from '../../environments/environment.prod';
 
 @Injectable()
 export class UserService {
+  baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) {}
   createUser(user: User): Observable<User> {
-    const url = '/api/user';
+    const url = this.baseUrl + '/api/user';
     const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
     const body = {
       username: user['username'],
@@ -22,22 +24,22 @@ export class UserService {
   }
 
   findUserById(userId: String): Observable<User> {
-    const url = '/api/user/' + userId;
+    const url = this.baseUrl + '/api/user/' + userId;
     return this.http.get<User>(url);
   }
 
   findUserByEmail(email: string): Observable<User> {
-    const url = '/api/user?email=' + email;
+    const url = this.baseUrl + '/api/user?email=' + email;
     return this.http.get<User>(url);
   }
 
   findUserByCredentials(email: String, password: String): Observable<User> {
-    const url = '/api/user?email=' + email + '&password=' + password;
+    const url = this.baseUrl + '/api/user?email=' + email + '&password=' + password;
     return this.http.get<User>(url);
   }
 
   updateUser(userId: String, user: User): Observable<User> {
-    const url = '/api/user/' + userId;
+    const url = this.baseUrl + '/api/user/' + userId;
     const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
     const body = {
       username: user['username'],
@@ -50,12 +52,12 @@ export class UserService {
   }
 
   deleteUser(userId): Observable<User> {
-    const url = '/api/user/' + userId;
+    const url = this.baseUrl + '/api/user/' + userId;
     return this.http.delete<User>(url);
   }
 
   postFile(userId: String, fileToUpload: File): Observable<boolean> {
-    const url = '/api/user/' + userId + '/upload';
+    const url = this.baseUrl + '/api/user/' + userId + '/upload';
     // const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
     const formData: FormData = new FormData();
     formData.append('photo', fileToUpload);
