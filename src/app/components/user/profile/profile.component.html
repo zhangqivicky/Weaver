@@ -17,6 +17,10 @@
     </div>
   </nav>
   <div class="container">
+    <div *ngIf = "errorFlag"
+         class = "alert alert-danger">
+      {{errorMsg}}
+    </div>
     <div class="row">
       <div class="col-lg-6">
         <div class="container-left">
@@ -25,7 +29,7 @@
           <div class="col-lg-2">
             <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)" class="topspace1">
             <br>
-            <button type="button" (click)="uploadImage()" class="btn-submit"  [disabled]="Image.value==''">Submit</button> </div>
+            <button type="button" (click)="uploadImage()" class="btn-large btn-submit"  [disabled]="Image.value==''">Submit</button> </div>
           <br><br><br><br><br><br>
           <label class="text-label">Username</label>
 
@@ -80,7 +84,7 @@
           <button routerLink='/user/{{userId}}/event'
                   class="text-box3"> My Events
           </button>
-          <button routerLink='/login'
+          <button (click)="logout()"
                   class="text-box2" > Sign Out</button>
 
         </div>

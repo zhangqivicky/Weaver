@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {UserService} from '../../../services/user.service.client';
-import {EventService} from '../../../services/event.service.client';
+import {UserService} from '../../../../services/user.service.client';
+import {EventService} from '../../../../services/event.service.client';
 
 @Component({
   selector: 'app-event-new',

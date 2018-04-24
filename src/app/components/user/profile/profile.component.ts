@@ -59,6 +59,11 @@ export class ProfileComponent implements OnInit {
     reader.readAsDataURL(this.fileToUpload);
   }
   uploadImage() {
+    if (!this.fileToUpload) {
+      this.errorFlag = true;
+      this.errorMsg = 'Please select a photo !';
+      return;
+    }
     this.userService.postFile(this.userId, this.fileToUpload).subscribe(data => {
       // do something, if upload success
       console.log('data:' + JSON.stringify(data));
@@ -105,6 +110,13 @@ export class ProfileComponent implements OnInit {
     }
     this.errorFlag = false;
     this.userService.updateUser(this.userId, this.user).subscribe();
+  }
+
+  logout() {
+    this.userService.logout().subscribe(
+      res => {
+        this.router.navigate(['/login']);
+      });
   }
 }
 

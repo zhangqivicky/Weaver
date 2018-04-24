@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import {ActivatedRoute} from '@angular/router';
 import {User} from '../../../models/user.model.client';
 import {UserService} from '../../../services/user.service.client';
+import {SharedService} from '../../../services/shared.service.client';
 import {Router} from '@angular/router';
 
 @Component({
@@ -20,6 +21,7 @@ export class RegisterComponent implements OnInit {
   errorMsg: string;
 
   constructor(private userService: UserService,
+              private sharedService: SharedService,
               private activatedroute: ActivatedRoute,
               private router: Router) { }
 
@@ -34,9 +36,11 @@ export class RegisterComponent implements OnInit {
     this.email = this.registerForm.value.email;
     this.password = this.registerForm.value.password;
     this.verifyPassword = this.registerForm.value.verifyPassword;
+    console.log('register client 1 : ' + this.email);
 
     this.userService.findUserByEmail(this.email).subscribe(
       res => {
+        console.log('register client 2 : ' + JSON.stringify(res));
         this.user = res;
         if (this.user) {
           this.errorFlag = true;
@@ -58,19 +62,16 @@ export class RegisterComponent implements OnInit {
           this.user['email'] = this.email;
           this.user['password'] = this.password;
           this.errorFlag = false;
-          console.log('input : ' + JSON.stringify(this.user));
-          this.userService.createUser(this.user).subscribe(
-            data => {
-              console.log('register : ' + JSON.stringify(data));
-              this.user = data;
-              if (this.user['_id']) {
-                this.router.navigate(['/user/' + this.user['_id']]);
-              } else {
-                this.errorFlag = true;
-                this.errorMsg = 'Something went wrong !'; }},
-            err => {
-              alert('Error!');
-            });
+          console.log('register client 3 : ' + JSON.stringify(this.user));
+          this.userService.register(this.email, this.password).subscribe(
+            user => {
+              this.sharedService.user = user;
+              this.router.navigate(['/profile']);
+            }, err => {
+              this.errorFlag = true;
+              this.errorMsg = 'Something is wrong!';
+            }
+          );
         }}, err => {
         alert('Error!');
       }

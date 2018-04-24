@@ -1,0 +1,66 @@
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../../assets/images/logo.png">Weaver</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a (click)="toProfile()">Profile <i class="fa fa-user-circle"></i></a></li>
+        <li><a routerLink="/register">Logout  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="topspace2">
+    <div class = "container">
+      <form method="post" action="">
+        <label for="name" class="html-text-box">Theme </label>
+        <textarea [(ngModel)]="name"
+                  name="name"
+                  placeholder="summary of the event"
+                  cols="25" rows="1" class="html-text-box"></textarea>
+        <div class="col-sm-6">
+          <label for="date" class="html-text-box ">Date</label>
+          <br>
+          <input [(ngModel)]="date"
+                 name="eventDate"
+                 type="date"
+                 class="html-date"/>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="location" class="html-text-box">Location</label>
+          <br>
+          <input [(ngModel)]="location"
+                 name="location"
+                 placeholder="the specific location of the event"
+                 class="html-location"disabled/>
+        </div>
+
+        <label for="description" class="html-text-box" style="float:left">Description</label>
+        <textarea name="description"
+                  placeholder=""
+                  cols="25" rows="3"
+                  class="html-text-box" disabled></textarea>
+        <button (click)="toChat()"
+                class="text-box1"> Start Chat </button>
+        <div *ngIf = "joinMark"
+             class = "text-box2">
+          <button (click)= "cancelEvent()" class="text-box2"> Cancel Join </button>
+        </div>
+        <div *ngIf = "!joinMark"
+             class = "text-box2">
+          <button (click)= "joinEvent()"class="text-box2"> Start Join </button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</div>

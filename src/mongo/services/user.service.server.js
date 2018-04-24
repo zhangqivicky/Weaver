@@ -1,31 +1,91 @@
+
+
 var userModel = require("../models/user/user.model.server");
+var passport = require('passport');
 
 module.exports = function(app) {
+
+  var bcrypt = require("bcrypt-nodejs");
+  var LocalStrategy = require('passport-local').Strategy;
+  passport.use('local', new LocalStrategy(localStrategy));
+
+  passport.serializeUser(serializeUser);
+  passport.deserializeUser(deserializeUser);
+
+  app.post('/api/register', register);
+  app.post('/api/login', passport.authenticate('local'), login);
+  app.post('/api/logout', logout);
+  app.post('/api/loggedin', loggedin);
   app.post("/api/user", createUser);
   app.get("/api/user", findUsers);
   app.get("/api/user/:userId", findUserById);
   app.put("/api/user/:userId", updateUser);
   app.delete("/api/user/:userId", deleteUser);
-  app.post("/api/user/:userId/upload", uploadImage);
 
+  function localStrategy(email, password, done) {
+    userModel.findUserByEmail(email).then(
+      function(user) {
+        if(user && bcrypt.compareSync(password, user.password)) {
+          return done(null, user);
+        } else {
+          return done(null, false);
+        }
+      }, function(err) {
+        if(err) { return done(err);}
+      }
+    )
+  }
+
+  function serializeUser(user, done) {
+    done(null, user);
+  }
+
+  function deserializeUser(user, done) {
+    userModel.findUserById(user._id).then(
+      function(user) { done(null, user);
+      }, function(err) { done(err, null);
+      });
+  }
+
+  function register(req, res) {
+    var user = req.body;
+    user.password = bcrypt.hashSync(user.password);
+    userModel.createUser(user).then(function (user) {
+      if (user) {
+        req.login(user, function (err) {
+          if (err) {
+            res.status(400).send(err);
+          } else {
+            res.json(user);
+          }
+        });
+      }
+    });
+  }
+
+  function login(req, res) {
+    console.log('req.user :' + JSON.stringify(req.user));
+    res.json(req.user);
+  }
+
+  function logout(req, res) {
+    req.logOut();
+    res.status(200).send();
+  }
+
+  function loggedin(req, res) {
+    res.send(req.isAuthenticated()? req.user : '0');
+  }
 
   function createUser(req, res) {
-    // req.body is an object with structure  { '{"username":"ea","password":"1"}': '' }
-    var body = JSON.parse(Object.keys(req.body)[0]);
-    console.log(JSON.stringify(body));
-    var newUser = {
-      email: body.email,
-      password: body.password
-    };
-    console.log(JSON.stringify(newUser));
-    userModel.createUser(newUser).then(function(user) {
+    var user = req.body;
+    userModel.createUser(user).then(function(user) {
       res.json(user);
     });
   }
-  function findUsers(req, res) {   
+  function findUsers(req, res) {
     var email = req.query['email'];
     var password = req.query['password'];
-    console.log(email);
     if(email && password) {
       userModel.findUserByCredentials(email, password).then(function(user) {
         res.json(user);
@@ -33,7 +93,6 @@ module.exports = function(app) {
       return;
     } else if(email) {
       userModel.findUserByEmail(email).then(function(user) {
-        console.log(JSON.stringify(user));
         res.json(user);
       });
       return;
@@ -52,7 +111,7 @@ module.exports = function(app) {
 
   function updateUser(req, res) {
     var userId = req.params['userId'];
-    var user = JSON.parse(Object.keys(req.body)[0]);
+    var user = req.body;
     userModel.updateUser(userId, user).then(function(status) {
       res.send(status);
     });
@@ -65,7 +124,7 @@ module.exports = function(app) {
     })
   }
 
-  function uploadImage(req, res) {
+function uploadImage(req, res) {
     //require multer for the file uploads
     var multer = require('multer');
     // set the directory for the uploads to the uploaded to

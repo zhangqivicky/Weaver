@@ -14,18 +14,14 @@ module.exports = userModel;
 
 
 function createUser(user) {
-  console.log('mongo user' + JSON.stringify(user));
   return userModel.create(user);
 }
 
 function findUserById(userId) {
-  return userModel.findById(userId, function(err, user) {
-  });
+  return userModel.findById(userId);
 }
 
 function findUserByEmail(email) {
-  console.log('mongo user' + email);
-  //console.log( JSON.stringify(userModel.findOne({email: email})));
   return userModel.findOne({email: email});
 }
 

@@ -13,18 +13,22 @@ enableProdMode();
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
-import { HomeEventComponent } from './components/event/home-event/home-event.component';
+import { HomeEventComponent } from './components/home/home-event/home-event.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { RegisterComponent } from './components/user/register/register.component';
-import { EventListComponent } from './components/event/event-list/event-list.component';
-import { EventNewComponent } from './components/event/event-new/event-new.component';
-import { EventEditComponent } from './components/event/event-edit/event-edit.component';
+import { EventListComponent } from './components/user/event/event-list/event-list.component';
+import { EventNewComponent } from './components/user/event/event-new/event-new.component';
+import { EventEditComponent } from './components/user/event/event-edit/event-edit.component';
 import { EventAttComponent } from './components/event/event-att/event-att.component';
 import {UserService} from './services/user.service.client';
 import {EventService} from './services/event.service.client';
+import {SharedService} from './services/shared.service.client';
+import {AuthenticationService} from './services/authentication.service.server';
 
 import {Routing} from './app.routing';
+import { EventProfileComponent } from './components/event/event-profile/event-profile.component';
+import { EventChatComponent } from './components/event/event-chat/event-chat.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +42,8 @@ import {Routing} from './app.routing';
     EventNewComponent,
     EventEditComponent,
     EventAttComponent,
+    EventProfileComponent,
+    EventChatComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +52,7 @@ import {Routing} from './app.routing';
     HttpClientModule,
     Routing
   ],
-  providers: [UserService, EventService,  {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [UserService, EventService, SharedService, AuthenticationService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
