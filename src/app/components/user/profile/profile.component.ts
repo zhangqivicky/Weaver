@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
   user: User;
   userId: string;
   displayname: string;
-  email: string;
+  username: string;
   currentPassword: string;
   newPassword: string;
   verifyPassword: string;
@@ -37,7 +37,7 @@ export class ProfileComponent implements OnInit {
     this.userId = this.sharedService.user._id;
     this.currentPassword = this.user['password'];
     this.displayname = this.user['displayname'];
-    this.email = this.user['username'];
+    this.username = this.user['username'];
     this.firstName = this.user['firstName'];
     this.lastName = this.user['lastName'];
     this.imgsrc = this.user['imgsrc'];
@@ -80,7 +80,8 @@ export class ProfileComponent implements OnInit {
       this.errorMsg = 'The password and verify password does not match !';
       return;
     } else if (this.newPassword ) {
-      this.user['password'] = this.newPassword;
+      const bcrypt = require('bcrypt-nodejs');
+      this.user['password'] = bcrypt.hashSyn(this.newPassword);
     }
     if (this.displayname) {
       this.user['displayname'] = this.displayname.trim();
