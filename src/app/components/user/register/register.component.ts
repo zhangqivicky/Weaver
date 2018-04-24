@@ -54,7 +54,7 @@ export class RegisterComponent implements OnInit {
       (res: User) => {
         this.user = res;
         console.log("user:" + JSON.stringify(res));
-        if (this.user['_id']) {
+        if (this.user) {
           this.errorFlag = true;
           this.errorMsg = 'This email already existed !';
         } else {
