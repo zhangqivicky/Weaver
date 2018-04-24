@@ -66,5 +66,8 @@ export class EventEditComponent implements OnInit {
       this.router.navigate(['/user/' + this.userId + '/event/']);
     });
   }
+  toProfile() {
+    this.router.navigate(['/profile']);
+  }
 
 }
