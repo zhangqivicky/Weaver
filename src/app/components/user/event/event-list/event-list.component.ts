@@ -12,7 +12,6 @@ import {Router} from '@angular/router';
 })
 export class EventListComponent implements OnInit {
   userId: string;
-  eventId: string;
   event: Event;
   postevents: Event[];
   savedevents: Event[];
@@ -25,9 +24,9 @@ export class EventListComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
+
     this.activeRouter.params.subscribe(params => {
       this.userId = params['uid'];
-      this.eventId = params['eid'];
       this.eventService.findGoingEventsByUser(this.userId).subscribe(res => {
         this.goingevents = res;
       }, err => {
@@ -63,10 +62,12 @@ export class EventListComponent implements OnInit {
     this.router.navigate(['/user/' + this.userId + '/event/' + eid]);
   }
 
-  toDelete() {
-    this.eventService.deleteEvent(this.eventId).subscribe((event: any) => {
-      this.event = event;
-      this.router.navigate(['/user/' + this.userId + '/event/']);
+  toDelete(eid) {
+    if (!confirm('Do you want to delete this event?')) {
+      return;
+    }
+    this.eventService.deleteEvent(eid).subscribe((res: any) => {
+      location.reload();
     });
   }
 }

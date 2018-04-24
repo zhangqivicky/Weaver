@@ -69,6 +69,19 @@ export class ProfileComponent implements OnInit {
   }
 
   updateProfile() {
+    if (this.newPassword) {
+      this.newPassword = this.newPassword.trim();
+    }
+    if (this.verifyPassword) {
+      this.verifyPassword = this.verifyPassword.trim();
+    }
+    if (this.newPassword !== this.verifyPassword) {
+      this.errorFlag = true;
+      this.errorMsg = 'The password and verify password does not match !';
+      return;
+    } else if (this.newPassword ) {
+      this.user['password'] = this.newPassword;
+    }
     if (this.displayname) {
       this.user['displayname'] = this.displayname.trim();
     }
@@ -78,19 +91,6 @@ export class ProfileComponent implements OnInit {
     if (this.lastName) {
       this.user['lastName'] = this.lastName.trim();
     }
-    if (this.newPassword) {
-      this.newPassword = this.newPassword.trim();
-    }
-    if (this.verifyPassword) {
-      this.verifyPassword = this.verifyPassword.trim();
-    }
-    if (this.newPassword !== this.verifyPassword) {
-      this.errorFlag = true;
-      this.errorMsg = 'The confirm password does not match !';
-      return;
-    } else if (this.newPassword ) {
-      this.user['password'] = this.newPassword;
-    } else {}
     this.userService.updateUser(this.userId, this.user).subscribe();
   }
 

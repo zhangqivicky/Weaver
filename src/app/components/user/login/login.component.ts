@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
           this.errorMsg = 'email and password does not match !';
         }}, err => {
         this.errorFlag = true;
-        this.errorMsg = 'something is wrong !';
+        this.errorMsg = 'email and password does not match !';
       }
     );
   }

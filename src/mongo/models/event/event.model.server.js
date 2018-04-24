@@ -9,6 +9,7 @@ eventModel.findPostEventsByUser = findPostEventsByUser;
 eventModel.findEventById = findEventById;
 eventModel.updateEvent = updateEvent;
 eventModel.deleteEvent = deleteEvent;
+eventModel.findAllEvents = findAllEvents;
 
 module.exports = eventModel;
 

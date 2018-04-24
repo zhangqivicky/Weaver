@@ -11,8 +11,11 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class UserService {
   baseUrl = environment.baseUrl;
-  private _options = { headers: new HttpHeaders({ 'Content-Type': 'application/json'}),  withCredentials: true};
-  constructor(private sharedService: SharedService, private router: Router, private http: HttpClient) {}
+  private _options = {headers: new HttpHeaders({'Content-Type': 'application/json'}), withCredentials: true};
+
+  constructor(private sharedService: SharedService, private router: Router, private http: HttpClient) {
+  }
+
   register(username: String, password: String): Observable<User> {
     const url = this.baseUrl + '/api/register';
     const body = {
@@ -30,6 +33,7 @@ export class UserService {
     };
     return this.http.post<User>(url, body, this._options);
   }
+
   logout(): Observable<any> {
     const url = this.baseUrl + '/api/logout';
     return this.http.post<any>(url, '', this._options);
@@ -48,6 +52,7 @@ export class UserService {
         }
       }));
   }
+
   createUser(user: User): Observable<User> {
     const url = this.baseUrl + '/api/user';
     const body = {
@@ -100,8 +105,10 @@ export class UserService {
     const formData: FormData = new FormData();
     formData.append('photo', fileToUpload);
     return this.http
-      .post(url, formData, { headers: {} })
-      .map(() => { return true; });   // .catch((e) => this.handleError(e));
+      .post(url, formData, {headers: {}}).pipe(
+      map(res => {
+        return true;
+      })
+  );   // .catch((e) => this.handleError(e));
   }
-
 }
