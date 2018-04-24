@@ -72,12 +72,12 @@ export class UserService {
   }
 
   findUserByUsername(username: string): Observable<User> {
-    const url = this.baseUrl + '/api/user?email=' + username;
+    const url = this.baseUrl + '/api/user?username=' + username;
     return this.http.get<User>(url);
   }
 
   findUserByCredentials(username: String, password: String): Observable<User> {
-    const url = this.baseUrl + '/api/user?email=' + username + '&password=' + password;
+    const url = this.baseUrl + '/api/user?username=' + username + '&password=' + password;
     return this.http.get<User>(url);
   }
 

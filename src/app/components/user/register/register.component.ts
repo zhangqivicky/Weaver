@@ -53,6 +53,7 @@ export class RegisterComponent implements OnInit {
     this.userService.findUserByUsername(this.username).subscribe(
       (res: User) => {
         this.user = res;
+        console.log("user:" + JSON.stringify(res));
         if (this.user['_id']) {
           this.errorFlag = true;
           this.errorMsg = 'This email already existed !';
