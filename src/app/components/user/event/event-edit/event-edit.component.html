@@ -3,7 +3,7 @@
     <div class="container-fluid ">
       <div class="navbar-header">
         <a routerLink="" class="navbar-brand weaver-size">
-          <img class = "pull-left" id="logo" src="../../../../../assets/images/logo.png">Weaver</a>
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -24,13 +24,14 @@
         <textarea [(ngModel)]="name"
                   name="name"
                   placeholder="summary of the event"
-                  cols="25" rows="1" class="html-text-box"></textarea>
+                  cols="25" rows="1" class="html-text-box">{{postevent.name}}</textarea>
         <div class="col-sm-6">
           <label for="date" class="html-text-box ">Date</label>
           <br>
           <input [(ngModel)]="date"
                  name="eventDate"
-                 type="date"
+                 type="datetime-local"
+                 value="{{postevent.date}}"
                  class="html-date"/>
         </div>
 
@@ -40,15 +41,22 @@
           <input [(ngModel)]="location"
                  name="location"
                  placeholder="the specific location of the event"
+                 value="{{postevent.location}}"
                  class="html-location"/>
         </div>
 
         <label for="description" class="html-text-box" style="float:left">Description</label>
-        <textarea name="email" placeholder="" cols="25" rows="3" class="html-text-box"></textarea>
-        <button (click)="addEvent()"
-                class="text-box1"> Add New Event </button>
-        <button (click)="toEventList()"
-                class="text-box2"> Cancel </button>
+        <textarea
+          [(ngModel)]="description"
+          name="description"
+          placeholder=""
+          cols="25"
+          rows="3"
+          class="html-text-box">{{postevent.description}}</textarea>
+        <button (click)="toUpdate()"
+                class="text-box1"> Edit Event </button>
+        <button (click)="toDelete()"
+                class="text-box2"> Delete </button>
       </form>
     </div>
 
