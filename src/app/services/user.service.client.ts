@@ -2,7 +2,6 @@ import {User} from '../models/user.model.client';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import {environment} from '../../environments/environment.prod';
 import {SharedService} from './shared.service.client';
@@ -12,23 +11,21 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class UserService {
   baseUrl = environment.baseUrl;
-  private _options = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }),  withCredentials: true};
+  private _options = { headers: new HttpHeaders({ 'Content-Type': 'application/json'}),  withCredentials: true};
   constructor(private sharedService: SharedService, private router: Router, private http: HttpClient) {}
-  register(email: String, password: String): Observable<User> {
-    alert('register client 4');
+  register(username: String, password: String): Observable<User> {
     const url = this.baseUrl + '/api/register';
     const body = {
-      email: email,
+      username: username,
       password: password
     };
-    console.log('register client 5' + JSON.stringify(body));
     return this.http.post<User>(url, body, this._options);
   }
 
-  login(email: String, password: String): Observable<User> {
+  login(username: String, password: String): Observable<User> {
     const url = this.baseUrl + '/api/login';
     const body = {
-      email: email,
+      username: username,
       password: password,
     };
     return this.http.post<User>(url, body, this._options);
@@ -54,11 +51,12 @@ export class UserService {
   createUser(user: User): Observable<User> {
     const url = this.baseUrl + '/api/user';
     const body = {
-      username: user['username'],
+      displayname: user['displayname'],
       password: user['password'],
-      email: user['email'],
+      username: user['username'],
       firstName: user['firstName'],
-      lastName: user['lastName']
+      lastName: user['lastName'],
+      imgsrc: user['imgsrc'],
     }
     return this.http.post<User>(url, JSON.stringify(body), this._options);
   }
@@ -68,21 +66,22 @@ export class UserService {
     return this.http.get<User>(url);
   }
 
-  findUserByEmail(email: string): Observable<User> {
-    const url = this.baseUrl + '/api/user?email=' + email;
+  findUserByUsername(username: string): Observable<User> {
+    const url = this.baseUrl + '/api/user?email=' + username;
     return this.http.get<User>(url);
   }
 
-  findUserByCredentials(email: String, password: String): Observable<User> {
-    const url = this.baseUrl + '/api/user?email=' + email + '&password=' + password;
+  findUserByCredentials(username: String, password: String): Observable<User> {
+    const url = this.baseUrl + '/api/user?email=' + username + '&password=' + password;
     return this.http.get<User>(url);
   }
 
   updateUser(userId: String, user: User): Observable<User> {
     const url = this.baseUrl + '/api/user/' + userId;
     const body = {
-      username: user['username'],
+      displayname: user['displayname'],
       password: user['password'],
+      username: user['username'],
       firstName: user['firstName'],
       lastName: user['lastName'],
       imgsrc: user['imgsrc'],

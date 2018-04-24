@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {HttpClient, HttpEventType} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {User} from '../../../models/user.model.client';
 import {UserService} from '../../../services/user.service.client';
+import {SharedService} from '../../../services/shared.service.client';
 import {Router} from '@angular/router';
 
 @Component({
@@ -16,38 +16,31 @@ export class ProfileComponent implements OnInit {
   selectedFile = null;
   user: User;
   userId: string;
-  username: string;
+  displayname: string;
   email: string;
-  currentpassword: string;
-  newpassword: string;
-  confirmpassword: string;
+  currentPassword: string;
+  newPassword: string;
+  verifyPassword: string;
   firstName: string;
   lastName: string;
+  imgsrc: string;
   errorFlag: Boolean = false;
   errorMsg: string;
 
   constructor(private http: HttpClient,
               private userService: UserService,
-              private activatedroute: ActivatedRoute,
+              private sharedService: SharedService,
               private router: Router) {}
 
   ngOnInit() {
-    this.activatedroute.params.subscribe(params => {
-        this.userId = params['uid'];
-      }
-    );
-    this.userService.findUserById(this.userId).subscribe(
-      res => {
-        this.user = res;
-        this.username = this.user['username'];
-        this.email = this.user['email'];
-        this.firstName = this.user['firstName'];
-        this.lastName = this.user['lastName'];
-        this.currentpassword = this.user['password'];
-      }, err => {
-        alert('Error!');
-      }
-    );
+    this.user = this.sharedService.user;
+    this.userId = this.sharedService.user._id;
+    this.currentPassword = this.user['password'];
+    this.displayname = this.user['displayname'];
+    this.email = this.user['username'];
+    this.firstName = this.user['firstName'];
+    this.lastName = this.user['lastName'];
+    this.imgsrc = this.user['imgsrc'];
   }
   handleFileInput(file: FileList) {
     this.fileToUpload = file.item(0);
@@ -76,39 +69,28 @@ export class ProfileComponent implements OnInit {
   }
 
   updateProfile() {
-    if (this.username) {
-      this.username = this.username.trim();
+    if (this.displayname) {
+      this.user['displayname'] = this.displayname.trim();
     }
     if (this.firstName) {
-      this.firstName = this.firstName.trim();
+      this.user['firstName'] = this.firstName.trim();
     }
     if (this.lastName) {
-      this.lastName = this.lastName.trim();
+      this.user['lastName'] = this.lastName.trim();
     }
-    if (this.newpassword) {
-      this.newpassword = this.newpassword.trim();
+    if (this.newPassword) {
+      this.newPassword = this.newPassword.trim();
     }
-    if (this.confirmpassword) {
-      this.confirmpassword = this.confirmpassword.trim();
+    if (this.verifyPassword) {
+      this.verifyPassword = this.verifyPassword.trim();
     }
-    if (this.newpassword !== this.confirmpassword) {
+    if (this.newPassword !== this.verifyPassword) {
       this.errorFlag = true;
       this.errorMsg = 'The confirm password does not match !';
       return;
-    }
-    if (this.username && this.username.length > 0) {
-      this.user['username'] = this.username;
-    }
-    if (this.firstName && this.firstName.length > 0) {
-      this.user['firstName'] = this.firstName;
-    }
-    if (this.lastName && this.lastName.length > 0) {
-      this.user['lastName'] = this.lastName;
-    }
-    if (this.newpassword && this.newpassword.length > 0) {
-      this.user['password'] = this.newpassword;
-    }
-    this.errorFlag = false;
+    } else if (this.newPassword ) {
+      this.user['password'] = this.newPassword;
+    } else {}
     this.userService.updateUser(this.userId, this.user).subscribe();
   }
 

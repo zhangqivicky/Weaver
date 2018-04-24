@@ -22,9 +22,11 @@ module.exports = function(app) {
   app.put("/api/user/:userId", updateUser);
   app.delete("/api/user/:userId", deleteUser);
 
-  function localStrategy(email, password, done) {
-    userModel.findUserByEmail(email).then(
+  function localStrategy(username, password, done) {
+    console.log('local strategy'+ username + password);
+    userModel.findUserByUsername(username).then(
       function(user) {
+        console.log('local strategy'+ JSON.stringify(user));
         if(user && bcrypt.compareSync(password, user.password)) {
           return done(null, user);
         } else {
@@ -62,12 +64,10 @@ module.exports = function(app) {
       }
     });
   }
-
   function login(req, res) {
-    console.log('req.user :' + JSON.stringify(req.user));
+    console.log('login server : ' + JSON.stringify(req.user));
     res.json(req.user);
   }
-
   function logout(req, res) {
     req.logOut();
     res.status(200).send();
@@ -84,15 +84,15 @@ module.exports = function(app) {
     });
   }
   function findUsers(req, res) {
-    var email = req.query['email'];
+    var username = req.query['username'];
     var password = req.query['password'];
-    if(email && password) {
-      userModel.findUserByCredentials(email, password).then(function(user) {
+    if(username && password) {
+      userModel.findUserByCredentials(username, password).then(function(user) {
         res.json(user);
       });
       return;
-    } else if(email) {
-      userModel.findUserByEmail(email).then(function(user) {
+    } else if(username) {
+      userModel.findUserByUsername(username).then(function(user) {
         res.json(user);
       });
       return;

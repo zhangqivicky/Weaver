@@ -29,7 +29,6 @@ export class LoginComponent implements OnInit {
   login() {
     this.email = this.loginForm.value.email.trim();
     this.password = this.loginForm.value.password.trim();
-    console.log('login email : ' + this.email);
 
     if (!this.email || !this.password) {
       this.errorFlag = true;

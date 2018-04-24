@@ -18,7 +18,7 @@
   </nav>
   <div class="container">
     <div *ngIf = "errorFlag"
-         class = "alert alert-danger">
+         class = "alert alert-danger topspace">
       {{errorMsg}}
     </div>
     <div class="row">
@@ -33,8 +33,8 @@
           <br><br><br><br><br><br>
           <label class="text-label">Username</label>
 
-          <input [(ngModel)]="username"
-                 name="username"
+          <input [(ngModel)]="displayname"
+                 name="displayname"
                  placeholder="username"
                  type="text"
                  class="form-control"/>
@@ -64,18 +64,18 @@
       <div class="col-lg-6">
         <div class = "container-right">
           <label class="text-label">Current Password</label>
-          <input [(ngModel)] = "currentpassword"
+          <input [(ngModel)] = "currentPassword"
                  placeholder="Type in previous password before change"
                  type="password"
                  class="form-control" disabled/>
           <label class="text-label">Change Password</label>
-          <input [(ngModel)] = "newpassword"
+          <input [(ngModel)] = "newPassword"
                  placeholder=""
                  type="password"
                  class="form-control"/>
 
           <label class="text-label">Confirm Password</label>
-          <input [(ngModel)] = "confirmpassword"
+          <input [(ngModel)] = "verifyPassword"
                  placeholder=""
                  type="password"
                  class="form-control"/>

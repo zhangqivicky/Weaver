@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 var userSchema = mongoose.Schema({
-  username: String,
+  displayname: String,
   password: String,
   firstName: String,
   lastName: String,
-  email: String,
+  username: String,
   imgsrc: String,
   postevents: {type: mongoose.Schema.Types.ObjectId, ref: "EventModel"},
   savedevents: {type: mongoose.Schema.Types.ObjectId, ref: "EventModel"},

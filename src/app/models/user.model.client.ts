@@ -1,13 +1,13 @@
 export class User {
   username: string;
-  email: string;
   password: string;
+  displayname: string;
   firstName: string;
   lastName: string;
   imgsrc: string;
-  constructor(username, email, password, firstName, lastName, imgsrc) {
-    this.username = username;
-    this.email = email;
+  constructor(displayname, email, password, firstName, lastName, imgsrc) {
+    this.displayname = displayname;
+    this.username = email;
     this.password = password;
     this.firstName = firstName;
     this.lastName = lastName;

@@ -25,15 +25,15 @@
     <h2>Join us </h2>
 
     <form (ngSubmit) = "register()" #f="ngForm">
-      <input id="email"
-             name="email"
+      <input id="username"
+             name="username"
              placeholder="email"
              type="email"
              ngModel
              required
-             #email="ngModel"
+             #username="ngModel"
              class="form-control"/>
-      <span class="help-block" *ngIf="!email.valid && email.touched">
+      <span class="help-block" *ngIf="!username.valid && f.submitted">
        Please enter email address!
   </span>
       <input id="password"
@@ -44,7 +44,7 @@
              required
              #password="ngModel"
              class="form-control"/>
-      <span class="help-block" *ngIf="!password.valid && password.touched">
+      <span class="help-block" *ngIf="!password.valid && f.submitted">
        Please enter password!
   </span>
       <input id="verifyPassword"
@@ -55,12 +55,11 @@
              required
              #verifyPassword="ngModel"
              class="form-control"/>
-      <span class="help-block" *ngIf="!verifyPassword.valid && verifyPassword.touched">
+      <span class="help-block" *ngIf="!verifyPassword.valid && f.submitted">
        Please enter verify password!
   </span>
       <button type="submit"
-              class="text-box1"
-              [disabled]="!f.valid"> Register </button>
+              class="text-box1"> Register </button>
       <button routerLink='/login'
               class="text-box2"> Cancel</button>
 

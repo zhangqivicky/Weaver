@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import {ActivatedRoute} from '@angular/router';
 import {User} from '../../../models/user.model.client';
 import {UserService} from '../../../services/user.service.client';
 import {SharedService} from '../../../services/shared.service.client';
@@ -14,7 +13,7 @@ import {Router} from '@angular/router';
 export class RegisterComponent implements OnInit {
   @ViewChild('f') registerForm: NgForm;
   user: User;
-  email: string ;
+  username: string ;
   password: string ;
   verifyPassword: string;
   errorFlag: boolean;
@@ -22,7 +21,6 @@ export class RegisterComponent implements OnInit {
 
   constructor(private userService: UserService,
               private sharedService: SharedService,
-              private activatedroute: ActivatedRoute,
               private router: Router) { }
 
   ngOnInit() {
@@ -33,37 +31,33 @@ export class RegisterComponent implements OnInit {
     return check.test(String(email).toLowerCase()); }
 
   register() {
-    this.email = this.registerForm.value.email;
-    this.password = this.registerForm.value.password;
-    this.verifyPassword = this.registerForm.value.verifyPassword;
-    console.log('register client 1 : ' + this.email);
+    this.username = this.registerForm.value.username.trim();
+    this.password = this.registerForm.value.password.trim();
+    this.verifyPassword = this.registerForm.value.verifyPassword.trim();
+    if (!this.username || !this.password || !this.verifyPassword) {
+      this.errorFlag = true;
+      this.errorMsg = 'email or password or verify password is empty !';
+      return;
+    }
+    if (!this.validEmail(this.username)) {
+      this.errorFlag = true;
+      this.errorMsg = 'The email format is unvalid !';
+      return;
+    }
+    if (this.password !== this.verifyPassword) {
+      this.errorFlag = true;
+      this.errorMsg = 'The verify password does not match !';
+      return;
+    }
 
-    this.userService.findUserByEmail(this.email).subscribe(
-      res => {
-        console.log('register client 2 : ' + JSON.stringify(res));
+    this.userService.findUserByUsername(this.username).subscribe(
+      (res: User) => {
         this.user = res;
-        if (this.user) {
+        if (this.user['_id']) {
           this.errorFlag = true;
           this.errorMsg = 'This email already existed !';
-        } else if (!this.validEmail(this.email)) {
-          this.errorFlag = true;
-          this.errorMsg = 'The email format is unvalid !';
-        } else if (this.password.indexOf(' ') >= 0) {
-          this.errorFlag = true;
-          this.errorMsg = 'The password cannot include blank space !';
-        } else if (this.password.length < 5) {
-          this.errorFlag = true;
-          this.errorMsg = 'The password must include at least 5 letters/digits !';
-        } else if (this.password !== this.verifyPassword) {
-          this.errorFlag = true;
-          this.errorMsg = 'The verify password does not match !';
         } else {
-          this.user = {username: null, password: null, email: null, firstName: null, lastName: null, imgsrc: null};
-          this.user['email'] = this.email;
-          this.user['password'] = this.password;
-          this.errorFlag = false;
-          console.log('register client 3 : ' + JSON.stringify(this.user));
-          this.userService.register(this.email, this.password).subscribe(
+          this.userService.register(this.username, this.password).subscribe(
             user => {
               this.sharedService.user = user;
               this.router.navigate(['/profile']);
