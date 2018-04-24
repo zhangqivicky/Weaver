@@ -3,7 +3,6 @@ import {ActivatedRoute} from '@angular/router';
 import {EventService} from '../../../services/event.service.client';
 import {User} from '../../../models/user.model.client';
 import {Event} from '../../../models/event.model.client';
-import {UserService} from '../../../services/user.service.client';
 import {Router} from '@angular/router';
 
 @Component({

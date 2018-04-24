@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b73657d-c44f-46b7-9bdd-9649c7ddccbd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts" afterPath="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -42,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.prod.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="environment.prod.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -84,14 +85,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event-list.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="event-list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,10 +199,10 @@
         <option value="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
         <option value="$PROJECT_DIR$/src/mongo/models/event/event.model.server.js" />
         <option value="$PROJECT_DIR$/src/mongo/services/event.service.server.js" />
-        <option value="$PROJECT_DIR$/src/environments/environment.prod.ts" />
         <option value="$PROJECT_DIR$/src/app/services/user.service.client.ts" />
         <option value="$PROJECT_DIR$/src/mongo/models/models.server.js" />
         <option value="$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts" />
+        <option value="$PROJECT_DIR$/src/environments/environment.prod.ts" />
       </list>
     </option>
   </component>
@@ -261,50 +260,7 @@
               <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
               <item name="Weaver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-              <item name="event-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="environments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weaver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weaver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -376,12 +332,12 @@
       <workItem from="1523300929072" duration="488000" />
       <workItem from="1523312879418" duration="33059000" />
       <workItem from="1523762626367" duration="1847000" />
-      <workItem from="1524466875703" duration="3775000" />
+      <workItem from="1524466875703" duration="4089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306826000" />
+    <option name="totallyTimeSpent" value="307140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="51" width="1280" height="690" extended-state="0" />
@@ -600,7 +556,7 @@
         <state relative-caret-position="61">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -633,14 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="82" column="3" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -683,11 +631,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/event/event-list/event-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
