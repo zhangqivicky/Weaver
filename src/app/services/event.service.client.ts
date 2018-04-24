@@ -28,7 +28,7 @@ export class EventService {
     return this.http.get<Event[]>(url);
   }
   findPostEventById(eventId: string): Observable<Event> {
-    const url = 'http://localhost:3000/api/event/' + eventId;
+    const url = this.baseUrl + '/api/event/' + eventId;
     return this.http.get<Event>(url);
   }
   findGoingEventsByUser(userId: string): Observable<Event[]> {
