@@ -13,10 +13,12 @@ import {Router} from '@angular/router';
 })
 export class EventListComponent implements OnInit {
   userId: string;
+  eventId: string;
   event: Event;
   postevents: Event[];
   savedevents: Event[];
   goingevents: Event[];
+  events: Event[];
   user: User;
 
   constructor(private eventService: EventService,
@@ -26,17 +28,24 @@ export class EventListComponent implements OnInit {
   ngOnInit() {
     this.activeRouter.params.subscribe(params => {
       this.userId = params['uid'];
+      this.eventId = params['eid'];
       this.eventService.findGoingEventsByUser(this.userId).subscribe(res => {
         this.goingevents = res;
       }, err => {
         alert('Error!'); });
       this.eventService.findPostEventsByUser(this.userId).subscribe(res => {
-        console.log('postevents :' + JSON.stringify(res));
+        // console.log('postevents :' + JSON.stringify(res));
         this.postevents = res;
       }, err => {
         alert('Error!'); });
       this.eventService.findSavedEventsByUser(this.userId).subscribe(res => {
-        this.postevents = res;
+        this.savedevents = res;
+      }, err => {
+        alert('Error!');
+      });
+      this.eventService.findAllEvents().subscribe(res => {
+        // console.log('events :' + JSON.stringify(res));
+        this.events = res;
       }, err => {
         alert('Error!');
       });
@@ -51,5 +60,14 @@ export class EventListComponent implements OnInit {
     this.router.navigate(['/user/' + this.userId]);
   }
 
-}
+  toEventEdit(eid: string) {
+    this.router.navigate(['/user/' + this.userId + '/event/' + eid]);
+  }
 
+  toDelete() {
+    this.eventService.deleteEvent(this.eventId).subscribe((event: any) => {
+      this.event = event;
+      this.router.navigate(['/user/' + this.userId + '/event/']);
+    });
+  }
+}
