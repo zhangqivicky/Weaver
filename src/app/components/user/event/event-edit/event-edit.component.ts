@@ -51,13 +51,20 @@ export class EventEditComponent implements OnInit {
   }
 
   toUpdate() {
-    this.postevent = {name: this.name, date: this.date, location: this.location, description: this.description, going: this.going, saved: this.saved};
+    this.postevent = {
+      name: this.name,
+      date: this.date,
+      location: this.location,
+      description: this.description,
+      going: this.going,
+      saved: this.saved
+    };
     console.log('event edit: see here:' + this.name + this.date + this.location + this.description);
     this.eventService.updateEvent(this.eventId, this.postevent).subscribe((event: any) => {
       this.postevent = event;
       console.log('event id: see here:' + this.eventId);
       this.router.navigate(['/user/' + this.userId + '/event/']);
     });
-
+  }
 
 }
