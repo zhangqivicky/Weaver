@@ -315,6 +315,7 @@ hr{
   border: 1px solid #ddd;
   width: 200px;
   font-size: 14px;
+  color: black;
 }
 
 #about, #contact{
@@ -588,4 +589,8 @@ span.time{
 
 #chat-main .form-control{
   margin:0 !important;
+}
+
+#username-input{
+  display: none;
 }

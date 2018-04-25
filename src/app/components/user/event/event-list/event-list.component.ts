@@ -146,5 +146,11 @@ export class EventListComponent implements OnInit {
       location.reload();
     });
   }
+
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    this.router.navigate(['/search/'+query]);
+  }
+
 }
 

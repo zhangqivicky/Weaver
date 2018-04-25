@@ -16,11 +16,12 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+              <a (click)="search()" class = "glyphicon glyphicon-search search-icon"></a></li>
             <li><input type = "text"
                        name = "search"
                        placeholder=" search event . . . "
-                       class="search-text"></li>
+                       class="search-text"
+                       id="query"></li>
             <li><a id="menu-about">About</a></li>
             <li><a id="menu-contact">Contact</a></li>
             <li><a routerLink="/register">Sign Up  <i class="fa fa-user-plus"></i></a></li>

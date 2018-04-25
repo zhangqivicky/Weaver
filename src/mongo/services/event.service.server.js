@@ -10,6 +10,7 @@ module.exports = function(app) {
   app.put("/api/event/:eventId", updateEvent);
   app.delete("/api/event/:eventId", deleteEvent);
   app.get("/api/event", findAllEvents);
+  app.get("/api/event/query/:query", queryAllEvents);
 
 
   function createEvent(req, res) {
@@ -78,6 +79,13 @@ module.exports = function(app) {
 
   function findAllEvents(req, res){
     eventModel.findAllEvents().then(function(events){
+      res.json(events);
+    });
+  }
+
+  function queryAllEvents(req, res){
+    var query = req.params['query'];
+    eventModel.queryAllEvents(query).then(function(events){
       res.json(events);
     });
   }

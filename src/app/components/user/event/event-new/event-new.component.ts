@@ -60,7 +60,15 @@ export class EventNewComponent implements OnInit {
       });
   }
   toEventList() {
+    location.reload();
     this.router.navigate(['/user/' + this.userId + '/event']);
   }
+
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    location.reload();
+    this.router.navigate(['/search/'+query]);
+  }
+
 }
 

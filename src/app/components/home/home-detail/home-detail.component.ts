@@ -53,6 +53,12 @@ export class HomeDetailComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    location.reload();
+    this.router.navigate(['/search/'+query]);
+  }
+
 }
 
 

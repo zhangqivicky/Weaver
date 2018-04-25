@@ -55,7 +55,7 @@ export class EventDetailComponent implements OnInit {
   }
   addAttendees() {
     this.newevent = {name: this.name, date: this.date, location: this.location, description: this.description, attendees: this.attendees};
-    this.newevent['attendees'] = this.newevent['attendees'].concat(this.userId);
+    this.newevent['attendees'] = this.newevent['attendees'] ? this.newevent['attendees'].concat(this.userId) : this.userId;
     this.newevent['attendees'] = this.newevent['attendees'].concat(",");
     console.log(' res : ' + JSON.stringify(this.newevent));
     this.eventService.updateEvent(this.eventId, this.newevent).subscribe( (event: any) => {
@@ -94,7 +94,7 @@ export class EventDetailComponent implements OnInit {
   }
 
   toProfile() {
-    this.router.navigate(['/user/' + this.userId]);
+    this.router.navigate(['/profile']);
   }
 
   toSave(){
@@ -102,7 +102,14 @@ export class EventDetailComponent implements OnInit {
   }
 
   toChat(){
+    location.reload();
     this.router.navigate(['/user/' + this.userId + '/event/' + this.eventId + '/chat']);
+  }
+
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    location.reload();
+    this.router.navigate(['/search/'+query]);
   }
 
 }

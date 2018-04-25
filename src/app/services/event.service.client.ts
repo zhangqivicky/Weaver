@@ -64,4 +64,8 @@ export class EventService {
     const url = this.baseUrl + '/api/event';
     return this.http.get<Event[]>(url);
   }
+  queryAllEvents(query): Observable<Event[]> {
+    const url = this.baseUrl + '/api/event/query/'+query;
+    return this.http.get<Event[]>(url);
+  }
 }

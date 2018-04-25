@@ -10,6 +10,7 @@ eventModel.findEventById = findEventById;
 eventModel.updateEvent = updateEvent;
 eventModel.deleteEvent = deleteEvent;
 eventModel.findAllEvents = findAllEvents;
+eventModel.queryAllEvents = queryAllEvents;
 
 module.exports = eventModel;
 
@@ -35,5 +36,14 @@ function deleteEvent(eventId) {
 }
 function findAllEvents() {
   return eventModel.find(function (err, docs) {
+  });
+}
+function queryAllEvents(query) {
+  console.log(query);
+  return eventModel.find({
+    "$text": {
+      "$search": query
+    }
+  }, function (err, docs) {
   });
 }

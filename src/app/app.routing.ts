@@ -2,6 +2,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {ModuleWithProviders} from '@angular/core';
 import {HomePageComponent} from './components/home/home-page/home-page.component';
 import {HomeEventComponent} from './components/home/home-event/home-event.component';
+import {SearchEventComponent} from './components/home/search-event/search-event.component';
 import { HomeDetailComponent } from './components/home/home-detail/home-detail.component';
 import {LoginComponent} from './components/user/login/login.component';
 import {RegisterComponent} from './components/user/register/register.component';
@@ -18,6 +19,7 @@ import {AuthenticationService} from './services/authentication.service.server';
 const APP_ROUTES: Routes = [
   { path : '', component : HomePageComponent},
   { path : 'event', component : HomeEventComponent},
+  { path : 'search/:query', component : SearchEventComponent},
   { path : 'event/:eid', component : HomeDetailComponent},
   { path : 'login' , component: LoginComponent},
   { path : 'register' , component: RegisterComponent },

@@ -12,6 +12,7 @@ enableProdMode();
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
 import { HomeEventComponent } from './components/home/home-event/home-event.component';
+import { SearchEventComponent } from './components/home/search-event/search-event.component';
 import { HomeDetailComponent } from './components/home/home-detail/home-detail.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
@@ -35,6 +36,7 @@ import {Routing} from './app.routing';
     AppComponent,
     HomePageComponent,
     HomeEventComponent,
+    SearchEventComponent,
     HomeDetailComponent,
     LoginComponent,
     ProfileComponent,

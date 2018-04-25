@@ -4,6 +4,7 @@ import {UserService} from '../../../../services/user.service.client';
 import {User} from '../../../../models/user.model.client';
 import {Event} from '../../../../models/event.model.client';
 import {ActivatedRoute, Router} from '@angular/router';
+import {SharedService} from '../../../../services/shared.service.client';
 
 
 @Component({
@@ -18,10 +19,12 @@ export class EventChatComponent implements OnInit {
   attendees: string;
   user: User;
   arrattendees: string[];
-
+  arrattids: string[];
+  username : string;
   constructor(private userService: UserService,
               private eventService: EventService,
               private activeRouter: ActivatedRoute,
+              private sharedService: SharedService,
               private router: Router) { }
 
   ngOnInit() {
@@ -30,11 +33,25 @@ export class EventChatComponent implements OnInit {
       this.eventId = params['eid'];
       this.eventService.findEventById(this.eventId).subscribe(res => {
         this.event = res;
-        this.arrattendees = this.event.attendees.split(',');
-        console.log(this.arrattendees);
-      }, err => {
-        alert('Error!'); });
+        this.arrattids = this.event.attendees.split(',');
+        this.arrattendees = [];
+        for(var i=0; i<this.arrattids.length; i++){
+          this.userService.findUserById(this.arrattids[i]).subscribe( (user: User) => {
+            this.arrattendees.push(user['username'].split('@')[0]);
+          }, err => {
+            console.log(err);
+            //alert('Error!');
+          });
+        }
     });
+      this.userService.findUserById(this.userId).subscribe( (user: User) => {
+        this.username = user['username'].split('@')[0];
+
+      }, err => {
+        console.log(err);
+        //alert('Error!');
+      });
+  });
   }
   logout() {
     this.userService.logout().subscribe(
@@ -42,5 +59,12 @@ export class EventChatComponent implements OnInit {
         this.router.navigate(['/login']);
       });
   }
+
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    location.reload();
+    this.router.navigate(['/search/'+query]);
+  }
+
 
 }

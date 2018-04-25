@@ -76,4 +76,11 @@ export class RegisterComponent implements OnInit {
       }
     );
   }
+
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    location.reload();
+    this.router.navigate(['/search/'+query]);
+  }
+
 }

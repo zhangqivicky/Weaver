@@ -70,4 +70,11 @@ export class EventEditComponent implements OnInit {
     this.router.navigate(['/profile']);
   }
 
+  search(){
+    var query = (document.getElementById('query') as HTMLInputElement).value;
+    location.reload();
+    this.router.navigate(['/search/'+query]);
+  }
+
+
 }
