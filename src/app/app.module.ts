@@ -14,15 +14,15 @@ enableProdMode();
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
 import { HomeEventComponent } from './components/home/home-event/home-event.component';
+import { HomeDetailComponent } from './components/home/home-detail/home-detail.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { EventListComponent } from './components/user/event/event-list/event-list.component';
 import { EventNewComponent } from './components/user/event/event-new/event-new.component';
 import { EventEditComponent } from './components/user/event/event-edit/event-edit.component';
-import { EventAttComponent } from './components/event/event-att/event-att.component';
-import { EventProfileComponent } from './components/event/event-profile/event-profile.component';
-import { EventChatComponent } from './components/event/event-chat/event-chat.component';
+import { EventAttendeeComponent } from './components/user/event/event-attendee/event-attendee.component';
+import { EventChatComponent } from './components/user/event/event-chat/event-chat.component';
 import { EventDetailComponent} from './components/user/event/event-detail/event-detail.component';
 
 import {UserService} from './services/user.service.client';
@@ -31,6 +31,8 @@ import {SharedService} from './services/shared.service.client';
 import {AuthenticationService} from './services/authentication.service.server';
 
 import {Routing} from './app.routing';
+import { HomeDetailComponent } from './components/home/home-detail/home-detail.component';
+import { EventAttendeeComponent } from './components/user/event/event-attendee/event-attendee.component';
 
 
 @NgModule({
@@ -38,16 +40,18 @@ import {Routing} from './app.routing';
     AppComponent,
     HomePageComponent,
     HomeEventComponent,
+    HomeDetailComponent,
     LoginComponent,
     ProfileComponent,
     RegisterComponent,
     EventListComponent,
     EventNewComponent,
     EventEditComponent,
-    EventAttComponent,
-    EventProfileComponent,
+    EventAttendeeComponent,
     EventChatComponent,
-    EventDetailComponent
+    EventDetailComponent,
+    HomeDetailComponent,
+    EventAttendeeComponent
   ],
   imports: [
     BrowserModule,
