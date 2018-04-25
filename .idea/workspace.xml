@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b73657d-c44f-46b7-9bdd-9649c7ddccbd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.html" afterPath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/event.model.client.ts" afterPath="$PROJECT_DIR$/src/app/models/event.model.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/event.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/assets/custom.js" afterPath="$PROJECT_DIR$/src/assets/custom.js" />
       <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/mongo/models/event/event.schema.server.js" afterPath="$PROJECT_DIR$/src/mongo/models/event/event.schema.server.js" />
-      <change beforePath="$PROJECT_DIR$/src/mongo/services/event.service.server.js" afterPath="$PROJECT_DIR$/src/mongo/services/event.service.server.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -44,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="265">
-              <caret line="100" column="2" lean-forward="true" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="14" />
+              <caret line="100" column="2" lean-forward="false" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -54,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+              <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -80,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event-edit.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="event-edit.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="900">
-              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -106,10 +86,20 @@
         <entry file="file://$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+              <caret line="66" column="10" lean-forward="false" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.prod.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/app/components/home/home-page/home-page.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/home/home-detail/home-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/home/home-detail/home-detail.component.html" />
-        <option value="$PROJECT_DIR$/src/environments/environment.prod.ts" />
         <option value="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.ts" />
@@ -205,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.html" />
         <option value="$PROJECT_DIR$/src/styles.css" />
         <option value="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html" />
+        <option value="$PROJECT_DIR$/src/environments/environment.prod.ts" />
       </list>
     </option>
   </component>
@@ -223,7 +213,7 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
+    <option name="x" value="58" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="736" />
@@ -483,15 +473,15 @@
       <workItem from="1524466875703" duration="51710000" />
       <workItem from="1524622655368" duration="785000" />
       <workItem from="1524623951400" duration="14632000" />
-      <workItem from="1524641730576" duration="13646000" />
+      <workItem from="1524641730576" duration="13931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="383824000" />
+    <option name="totallyTimeSpent" value="384109000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="23" width="1280" height="736" extended-state="0" />
+    <frame x="58" y="23" width="1280" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -719,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -764,7 +746,7 @@
         <state relative-caret-position="180">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,7 +804,7 @@
         <state relative-caret-position="975">
           <caret line="65" column="1" lean-forward="false" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -830,7 +812,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+          <caret line="66" column="10" lean-forward="false" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -850,7 +832,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="100" column="2" lean-forward="true" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="14" />
+          <caret line="100" column="2" lean-forward="false" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -868,7 +850,7 @@
         <state relative-caret-position="220">
           <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,7 +868,7 @@
         <state relative-caret-position="468">
           <caret line="43" column="3" lean-forward="false" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -894,7 +876,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -910,7 +892,15 @@
     <entry file="file://$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
-          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <caret line="60" column="13" lean-forward="false" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
