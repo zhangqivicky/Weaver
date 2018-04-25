@@ -19,8 +19,9 @@ export class EventDetailComponent implements OnInit {
   date: Date;
   location: string;
   description: string;
-  attendees: string[];
+  attendees: string;
   newevent: any;
+  attMark: boolean;
   constructor(private userService: UserService,
               private eventService: EventService,
               private activeRouter: ActivatedRoute,
@@ -37,6 +38,12 @@ export class EventDetailComponent implements OnInit {
         this.location = this.newevent['location'];
         this.description = this.newevent['description'];
         this.attendees = this.newevent['attendees'];
+        if (this.attendees.indexOf(this.userId) >= 0) {
+          this.attMark = true;
+        } else {
+          this.attMark = false;
+        }
+
       }, err => {
         alert('Error!'); });
       this.userService.findUserById(this.userId).subscribe( res => {
@@ -48,26 +55,41 @@ export class EventDetailComponent implements OnInit {
   }
   addAttendees() {
     this.newevent = {name: this.name, date: this.date, location: this.location, description: this.description, attendees: this.attendees};
-    this.newevent['attendees'].push(this.userId);
+    this.newevent['attendees'] = this.newevent['attendees'].concat(this.userId);
+    this.newevent['attendees'] = this.newevent['attendees'].concat(",");
     console.log(' res : ' + JSON.stringify(this.newevent));
     this.eventService.updateEvent(this.eventId, this.newevent).subscribe( (event: any) => {
       console.log(' res : ' + JSON.stringify(this.newevent));
       this.newevent = event;
-      console.log(typeof this.event['attendees']);
-      if (this.newevent['attendees']) {
-        console.log(' res : ' + JSON.stringify(this.newevent));
-        console.log(' attendees number: ' + this.newevent.attendees.length);
-        this.router.navigate(['/user/' + this.userId + '/event/' ]);
-      } else {
-        return;
-      }
+      // console.log(typeof this.event['attendees']);
+      console.log(' res : ' + JSON.stringify(this.newevent));
+      // console.log(' attendees number: ' + this.newevent.attendees.length);
+      this.router.navigate(['/user/' + this.userId + '/event/' ]);
     }, err => {
       console.log(err);
       //alert('Error!');
     });
   }
 
-  toNewEvent() {
+  deleteAttendees() {
+    this.newevent = {name: this.name, date: this.date, location: this.location, description: this.description, attendees: this.attendees};
+    var target = this.userId.concat(",");
+    this.newevent['attendees'] = this.newevent['attendees'].replace(target, "");
+    console.log(' res : ' + JSON.stringify(this.newevent));
+    this.eventService.updateEvent(this.eventId, this.newevent).subscribe((event: any) => {
+      console.log(' res : ' + JSON.stringify(this.newevent));
+      this.newevent = event;
+      console.log(typeof this.newevent['attendees']);
+      console.log(' res : ' + JSON.stringify(this.newevent));
+      // console.log(' attendees number: ' + this.newevent.attendees.length);
+      this.router.navigate(['/user/' + this.userId + '/event/']);
+    }, err => {
+      console.log(err);
+      //alert('Error!');
+    });
+  }
+
+    toNewEvent() {
     this.router.navigate(['/user/' + this.userId + '/event/new']);
   }
 
@@ -79,8 +101,8 @@ export class EventDetailComponent implements OnInit {
 
   }
 
-  toAttendees(){
-
+  toChat(){
+    this.router.navigate(['/user/' + this.userId + '/event/' + this.eventId + '/chat']);
   }
 
 }

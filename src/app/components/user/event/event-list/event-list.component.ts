@@ -97,7 +97,6 @@ export class EventListComponent implements OnInit {
               private router: Router) { }
 
   ngOnInit() {
-
     this.activeRouter.params.subscribe(params => {
       this.userId = params['uid'];
       this.eventService.findGoingEventsByUser(this.userId).subscribe(res => {
@@ -135,6 +134,7 @@ export class EventListComponent implements OnInit {
     this.router.navigate(['/user/' + this.userId + '/event/' + eid]);
   }
   toEventDetail(eid: string) {
+    location.reload();
     this.router.navigate(['/user/' + this.userId + '/event/' + eid + '/detail']);
   }
 

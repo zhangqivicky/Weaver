@@ -81,7 +81,7 @@
                  class="form-control"/>
           <button (click) = "updateProfile()"
                   class="text-box1"> Update </button>
-          <button routerLink='/user/{{userId}}/event'
+          <button (click)="toMyEvents()"
                   class="text-box3"> My Events
           </button>
           <button (click)="logout()"

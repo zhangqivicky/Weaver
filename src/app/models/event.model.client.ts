@@ -3,10 +3,12 @@ export class Event {
   date: Date;
   location: string;
   description: string;
-  constructor(name, date, location, description) {
+  attendees: string;
+  constructor(name, date, location, description, attendees) {
     this.name = name;
     this.date = date;
     this.location = location;
     this.description = description;
+    this.attendees = attendees;
   }
 }

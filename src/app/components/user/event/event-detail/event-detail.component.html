@@ -45,17 +45,27 @@
                value="{{newevent.location}}"
                class="html-location"/>
       </div>
+      <iframe width="300" height="225" frameborder="0" style="border:0" id="map"
+              src="" allowfullscreen></iframe>
       <label for="description" class="html-text-box">Description </label>
       <textarea [(ngModel)]="description"
                 name="description"
                 value = {{newevent.description}}
                 cols="25" rows="5" class="html-text-box"></textarea>
-      <button (click)="toSave()"
-              class="text-box1"> Save </button>
-      <button (click)="addAttendees()"
-              class="text-box2"> Going </button>
-      <button (click)="toAttendees()"
-              class="text-box1"> Attendees </button>
+
+      <div *ngIf = "!attMark">
+        <button (click)="addAttendees()"
+                class="text-box2"> Going </button>
+      </div>
+
+      <div *ngIf = "attMark">
+        <button (click)="deleteAttendees()"
+                class="text-box2"> Cancel </button>
+
+      <button (click)="toChat()"
+              class="text-box1"> Start Chat</button>
     </div>
   </div>
 </div>
+
+<!-- end of main -->

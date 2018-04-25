@@ -61,7 +61,7 @@ module.exports = function(app) {
 
   function updateEvent(req, res) {
     var eventId = req.params['eventId'];
-    var event = JSON.parse(Object.keys(req.body)[0]);
+    var event = JSON.parse(Object.keys(req.body));
 
     eventModel.updateEvent(eventId, event).then(function(status) {
       res.send(status);

@@ -51,7 +51,7 @@ export class EventNewComponent implements OnInit {
       res => {
         this.event = res;
         if (this.event['_id']) {
-          console.log(JSON.stringify(this.event));
+          location.reload();
           this.router.navigate(['/user/' + this.userId + '/event']);
         } else {
           return;

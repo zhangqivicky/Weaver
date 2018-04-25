@@ -98,6 +98,10 @@ export class ProfileComponent implements OnInit {
     }
     this.userService.updateUser(this.userId, this.user).subscribe();
   }
+  toMyEvents(){
+    location.reload();
+    this.router.navigate(['/user/' + this.userId +'/event']);
+  }
 
   logout() {
     this.userService.logout().subscribe(

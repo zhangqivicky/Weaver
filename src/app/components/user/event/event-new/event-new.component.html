@@ -20,6 +20,7 @@
   <div class="topspace2">
     <div class = "container">
       <form method="post" action="">
+        <main>
         <label for="name" class="html-text-box">Name </label>
         <textarea [(ngModel)]="name"
                   name="name"
@@ -30,7 +31,7 @@
           <br>
           <input [(ngModel)]="date"
                  name="eventDate"
-                 type="date"
+                 type="datetime-local"
                  class="html-date"/>
         </div>
 
@@ -49,6 +50,7 @@
                 class="text-box1"> Add New Event </button>
         <button (click)="toEventList()"
                 class="text-box2"> Cancel </button>
+        </main>
       </form>
     </div>
 

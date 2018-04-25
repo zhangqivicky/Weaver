@@ -52,7 +52,7 @@
                   </div>
 
                   <div class="col-xs-3 headerfont">
-                    <span>{{event.date}}</span>
+                    <span class="event-date">{{event.date}}</span>
                   </div>
 
                   <div class="col-xs-3 headerfont">
@@ -83,7 +83,7 @@
                     </span>
                 </div>
                 <div class="col-xs-2 headerfont">
-                  <span> {{goingevent.date}}</span>
+                  <span class="event-date"> {{goingevent.date}}</span>
                 </div>
                 <div class="col-xs-2 headerfont">
                   <span>{{goingevent.location}}</span>
@@ -114,7 +114,7 @@
                     </span>
                   </div>
                   <div class="col-xs-2 headerfont">
-                    <span> {{savedevent.date}}</span>
+                    <span class="event-date"> {{savedevent.date}}</span>
                   </div>
                   <div class="col-xs-2 headerfont">
                     <span>{{savedevent.location}}</span>
@@ -131,7 +131,7 @@
               <li class = "list-group-item">
                 <div class = "row">
 
-                  <div class="col-xs-5 headerfont">
+                  <div class="col-xs-4 headerfont">
                   <span>
                     <a target="_blank" rel="noopener" class = "namefontStyle"
                        (click) = "toEventDetail(postevent._id)">
@@ -139,8 +139,8 @@
                   </span>
                   </div>
 
-                  <div class="col-xs-2 fontStyle headerfont">
-                    <span>{{postevent.date}}</span>
+                  <div class="col-xs-3 fontStyle headerfont">
+                    <span class="event-date">{{postevent.date}}</span>
                   </div>
 
                   <div class="col-xs-2 center fontStyle headerfont">
