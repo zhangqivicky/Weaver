@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b73657d-c44f-46b7-9bdd-9649c7ddccbd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/components/home/search-event/search-event.component.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/components/home/search-event/search-event.component.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/components/home/search-event/search-event.component.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/components/home/search-event/search-event.component.ts" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-detail/home-detail.component.html" afterPath="$PROJECT_DIR$/src/app/components/home/home-detail/home-detail.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-detail/home-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/components/home/home-detail/home-detail.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.html" afterPath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.ts" afterPath="$PROJECT_DIR$/src/app/components/home/home-event/home-event.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-page/home-page.component.html" afterPath="$PROJECT_DIR$/src/app/components/home/home-page/home-page.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/home/home-page/home-page.component.ts" afterPath="$PROJECT_DIR$/src/app/components/home/home-page/home-page.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-attendee/event-attendee.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-attendee/event-attendee.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-chat/event-chat.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-detail/event-detail.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-edit/event-edit.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-list/event-list.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/event/event-new/event-new.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/login/login.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/profile/profile.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/register/register.component.html" afterPath="$PROJECT_DIR$/src/app/components/user/register/register.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" afterPath="$PROJECT_DIR$/src/app/components/user/register/register.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/event.service.client.ts" afterPath="$PROJECT_DIR$/src/app/services/event.service.client.ts" />
-      <change beforePath="$PROJECT_DIR$/src/assets/custom.js" afterPath="$PROJECT_DIR$/src/assets/custom.js" />
-      <change beforePath="$PROJECT_DIR$/src/mongo/models/event/event.model.server.js" afterPath="$PROJECT_DIR$/src/mongo/models/event/event.model.server.js" />
-      <change beforePath="$PROJECT_DIR$/src/mongo/models/event/event.schema.server.js" afterPath="$PROJECT_DIR$/src/mongo/models/event/event.schema.server.js" />
-      <change beforePath="$PROJECT_DIR$/src/mongo/services/event.service.server.js" afterPath="$PROJECT_DIR$/src/mongo/services/event.service.server.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -135,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -272,7 +237,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-13" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
@@ -597,15 +562,15 @@
       <workItem from="1524466875703" duration="51710000" />
       <workItem from="1524622655368" duration="785000" />
       <workItem from="1524623951400" duration="14632000" />
-      <workItem from="1524641730576" duration="27637000" />
+      <workItem from="1524641730576" duration="28253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="397815000" />
+    <option name="totallyTimeSpent" value="398431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="23" width="1280" height="736" extended-state="0" />
+    <frame x="-13" y="23" width="1280" height="736" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -817,7 +782,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,7 +816,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -885,7 +850,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -919,7 +884,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#73#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1063,7 +1028,7 @@
     <entry file="file://$PROJECT_DIR$/src/environments/environment.prod.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
