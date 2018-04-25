@@ -43,4 +43,12 @@ export class HomeEventComponent implements OnInit {
     });
   }
 
+  toEventDetail(eid: string) {
+    this.router.navigate(['/event/' + eid]);
+  }
+
+  toHomePage(){
+    this.router.navigate(['']);
+  }
+
 }

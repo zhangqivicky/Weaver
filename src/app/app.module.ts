@@ -9,8 +9,6 @@ import {HashLocationStrategy} from '@angular/common';
 
 enableProdMode();
 
-
-
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home/home-page/home-page.component';
 import { HomeEventComponent } from './components/home/home-event/home-event.component';
@@ -31,9 +29,6 @@ import {SharedService} from './services/shared.service.client';
 import {AuthenticationService} from './services/authentication.service.server';
 
 import {Routing} from './app.routing';
-import { HomeDetailComponent } from './components/home/home-detail/home-detail.component';
-import { EventAttendeeComponent } from './components/user/event/event-attendee/event-attendee.component';
-
 
 @NgModule({
   declarations: [

@@ -75,7 +75,13 @@ export class EventDetailComponent implements OnInit {
   toProfile() {
     this.router.navigate(['/user/' + this.userId]);
   }
+
   toSave(){
 
   }
+
+  toAttendees(){
+
+  }
+
 }
