@@ -12,6 +12,7 @@ import { EventProfileComponent} from './components/event/event-profile/event-pro
 import {EventAttComponent } from './components/event/event-att/event-att.component';
 import {EventChatComponent } from './components/event/event-chat/event-chat.component';
 import {AuthenticationService} from './services/authentication.service.server';
+import { EventDetailComponent} from './components/user/event/event-detail/event-detail.component';
 
 const APP_ROUTES: Routes = [
   { path : '', component : HomePageComponent},
@@ -23,7 +24,7 @@ const APP_ROUTES: Routes = [
   { path : 'user/:uid/event' , component: EventListComponent},
   { path : 'user/:uid/event/new' , component: EventNewComponent},
   { path : 'user/:uid/event/:eid', component: EventEditComponent},
-
+  { path : 'user/:uid/event/:eid/detail', component: EventDetailComponent},
   { path : 'event/:eid/', component: EventProfileComponent},
   { path : 'event/:eid/attendee', component: EventAttComponent},
   { path : 'event/:eid/chat', component: EventChatComponent}

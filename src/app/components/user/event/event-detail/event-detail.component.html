@@ -1,0 +1,59 @@
+<div class="font-lato">
+  <nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <a routerLink="" class="navbar-brand weaver-size">
+          <img class = "pull-left" id="logo" src="../../../../assets/images/logo.png">Weaver</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/event" class = "glyphicon glyphicon-search search-icon"></a></li>
+        <li><input type = "text"
+                   name = "search"
+                   placeholder=" search event . . . "
+                   class="search-text"></li>
+        <li><a (click)="toNewEvent()">Create Event <i class="fas fa-plus"></i></a></li>
+        <li><a (click)="toProfile()">Profile <i class="fa fa-user-circle"></i></a></li>
+        <li><a routerLink="/login">Logout  <i class="fa fa-user"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="topspace2">
+    <div class = "container">
+      <label for="name" class="html-text-box">Name </label>
+      <textarea [(ngModel)]="name"
+                name="name"
+                value = {{newevent.name}}
+                cols="25" rows="1" class="html-text-box"></textarea>
+      <div class="col-sm-6">
+        <label for="date" class="html-text-box ">Date</label>
+        <br>
+        <input [(ngModel)]="date"
+               name="eventDate"
+               type="datetime-local"
+               value="{{postevent.date}}"
+               class="html-date"/>
+      </div>
+
+      <div class="col-sm-6">
+        <label for="location" class="html-text-box">Location</label>
+        <br>
+        <input [(ngModel)]="location"
+               name="location"
+               placeholder="the specific location of the event"
+               value="{{postevent.location}}"
+               class="html-location"/>
+      </div>
+      <label for="description" class="html-text-box">Description </label>
+      <textarea [(ngModel)]="description"
+                name="description"
+                value = {{newevent.description}}
+                cols="25" rows="5" class="html-text-box"></textarea>
+      <button (click)="toSave()"
+              class="text-box1"> Save </button>
+      <button (click)="addAttendees()"
+              class="text-box2"> Going </button>
+    </div>
+  </div>
+</div>
