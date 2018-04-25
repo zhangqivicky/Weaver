@@ -65,7 +65,6 @@ export class EventDetailComponent implements OnInit {
       console.log(err);
       //alert('Error!');
     });
-
   }
 
   toNewEvent() {
