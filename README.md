@@ -1,4 +1,4 @@
-# Weaver: a event-based social network
+# Weaver: a event-based social network website
 
 ## Introduction
 
